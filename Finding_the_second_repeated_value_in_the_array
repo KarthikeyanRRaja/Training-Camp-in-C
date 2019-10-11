@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,h,t,j,n,c,res;
+    scanf("%d",&n);
+    int arr[n];
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        c=0;
+        for(j=0;j<n;j++)
+        {
+            if(arr[i]==arr[j])
+            {
+                if(i>j)
+                {
+                    break;
+                }
+                else
+                {
+                    c++;
+                }
+            }
+        }
+        if(c!=0)
+        {
+            if(i==0)
+            {
+                t=c;
+            }
+        h=t-c;
+        if(h==1 || h==-1)
+        {
+            res=arr[i];
+        }
+        
+        }
+    }
+    printf("%d",res);
+    return 0;
+}
